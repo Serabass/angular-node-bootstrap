@@ -43,4 +43,6 @@ yarn add --dev jest ts-jest @types/jest
 # Инициализируем конфиги для ЖЕСТа
 yarn ts-jest config:init
 
+cd ../..
+
 rm -rf .init
