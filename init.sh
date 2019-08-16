@@ -30,7 +30,7 @@ cd packages/backend
 yarn global add yo
 
 # Ставим yeoman
-yarn yo express-no-stress-typescript
+yo express-no-stress-typescript
 
 # Ставим ЖЕСТъ как дев-зависимость
 yarn add --dev jest ts-jest @types/jest
