@@ -22,15 +22,14 @@ yarn add @angular/cli lerna
 # Приводим проект в нужный вид, необходимый для работы с Lerna
 yarn lerna init
 
-mkdir packages/backend -p
-
-# Идём туды
-cd packages/backend
-
-yarn global add yo generator-express-no-stress-typescript
+# Идём в пакеты
+cd packages
 
 # Ставим yeoman
-yo express-no-stress-typescript
+yarn global add yo generator-express-no-stress-typescript
+
+# Крафтим
+yo express-no-stress-typescript backend
 
 # Ставим ЖЕСТъ как дев-зависимость
 yarn add --dev jest ts-jest @types/jest
