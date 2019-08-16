@@ -25,6 +25,8 @@ yarn lerna init
 # Идём туды
 cd packages/backend
 
+yarn global add yo
+
 # Ставим yeoman
 yarn yo express-no-stress-typescript
 
