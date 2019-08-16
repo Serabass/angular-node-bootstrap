@@ -25,7 +25,11 @@ yarn lerna init
 # Идём в пакеты
 cd packages
 
-mv ../.init/backend ./backend -r
+mv ../.init/backend ./
+
+cd backend
+
+yarn
 
 cd ../..
 
