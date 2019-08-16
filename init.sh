@@ -27,7 +27,7 @@ mkdir packages/backend -p
 # Идём туды
 cd packages/backend
 
-yarn global add yo
+yarn global add yo generator-express-no-stress-typescript
 
 # Ставим yeoman
 yo express-no-stress-typescript
