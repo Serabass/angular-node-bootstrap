@@ -22,6 +22,8 @@ yarn add @angular/cli lerna
 # Приводим проект в нужный вид, необходимый для работы с Lerna
 yarn lerna init
 
+mkdir packages/backend -p
+
 # Идём туды
 cd packages/backend
 
