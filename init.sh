@@ -31,6 +31,8 @@ cd backend
 
 yarn
 
+yarn ts-jest config:init
+
 cd ../..
 
 rm -rf .init
