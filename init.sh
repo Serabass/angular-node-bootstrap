@@ -25,18 +25,23 @@ yarn lerna init
 # Идём в пакеты
 cd packages
 
+# Переносим заготовленный код для бэкенда (уж простите, генераторы оказались лютой хернёй)
 mv ../.init/backend ./
 
+# Идём туда
 cd backend
 
+# Прописываем имя пакета
 cat package.json | json -e "this.name = '@$PROJECTNAME/backend'" > package.json
 
+# Ярним!
 yarn
 
+# Создаём конфиг для ЖЕСТа
 yarn ts-jest config:init
 
+# Назад!
 cd ..
-
 
 # Крафтим новое ангуляр-приложение (в ходе установки консоль задаст несколько вопросов)
 yarn ng new frontend
