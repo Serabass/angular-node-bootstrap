@@ -38,3 +38,6 @@ _**Примечание**: локальный коммит выполняетс�
 
 # Contributing
 Предлагайте свои плюшки в [Issues](https://github.com/Serabass/angular-node-bootstrap/issues)
+
+# Аналогичные репы 
+* [Angular + Laravel](https://github.com/Serabass/angular-laravel-bootstrap)
