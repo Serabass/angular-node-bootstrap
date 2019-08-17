@@ -79,9 +79,22 @@ cat package.json | json -e "this.name = '@$PROJECTNAME/frontend'" > package.json
 
 cd ../..
 
+# САМОУНИЧТОЖАЕМСЯ ヽ(°O°)ﾉ
+rm -f init.sh
+
+# Папка .init нам тоже больше не нужон
 rm -rf .init
 
 # Прописываем в корневом package.json две задачи, которые будут вызывать одноимённые задачи во внутренних пакетах (lerna привет)
 cat package.json | json -e "if (this.scripts == undefined) this.scripts = {};" > package.json
 cat package.json | json -e "this.scripts.start = 'lerna run start --stream --parallel';" > package.json
 cat package.json | json -e "this.scripts.build = 'lerna run build --stream --parallel';" > package.json
+
+# Добавляем всё это добро в гит
+git add .
+
+# Коммитим
+git commit -m "Bootstrap!"
+
+# Мы молодцы
+echo Commited!
