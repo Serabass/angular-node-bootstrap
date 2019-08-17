@@ -77,6 +77,8 @@ cat package.json | json -e "this.scripts.start += ' --proxy-config proxy.config.
 # Прописываем имя пакета
 cat package.json | json -e "this.name = '@$PROJECTNAME/frontend'" > package.json
 
+cd ../..
+
 rm -rf .init
 
 # Прописываем в корневом package.json две задачи, которые будут вызывать одноимённые задачи во внутренних пакетах (lerna привет)
